@@ -37,9 +37,7 @@ const Sidebar = () => {
     return (
       <Link to={ruta}>
         <button
-          className={`p-1 my-2  bg-${
-            isActive ? 'indigo' : 'gray'
-          }-700 hover:bg-indigo-900 flex w-full items-center text-white rounded-md`}
+          className={`p-1 my-2  bg-gray-700 hover:bg-indigo-900 flex w-full items-center text-white rounded-md`}
         >
           {usuario ? (
           <>
