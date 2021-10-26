@@ -9,7 +9,7 @@ const Sidebar = () => {
     const { user, logout } = useAuth0();
 
     const cerrarSesion= ()=>{
-      logout({returnTo: 'http://localhost:3000/'})
+      logout({returnTo: 'https://frozen-island-35955.herokuapp.com/'})
       localStorage.setItem('token', null)
     }
     return (

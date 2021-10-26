@@ -4,7 +4,7 @@ import Maestroproductos from 'pages/admin/MaestroProductos';
 import Maestroventas from 'pages/admin/MaestroVentas';
 import Registroventas from 'pages/admin/RegistroVentas';
 import Gestionusuarios from 'pages/admin/GestionUsuarios'
-import Admin from 'pages/admin/Index';
+
 import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
 import 'styles/styles.css'
 import { Auth0Provider } from "@auth0/auth0-react";
