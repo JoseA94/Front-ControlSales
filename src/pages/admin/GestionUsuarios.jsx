@@ -30,7 +30,7 @@ const GestionUsuarios = () => {
 return(
 
 
-<div className="box1">
+<div className="flex flex-col items-center justify-center w-full py-8">
 			<p className="tituloGu">Gestion de usuarios</p>
 
 			<div className='flex flex-col items-center justify-center w-full p-8'>
@@ -123,7 +123,7 @@ const TablaUsuarios=({listaUsuarios,setEjecutarConsulta})=>{
     },[busqueda,listaUsuarios])
 
 	return(
-		<div className='flex flex-col items-center justify-center w-full py-8'>
+		<div className='flex flex-col items-center justify-center w-full py-14'>
             <input
             value={busqueda}
             onChange={(e)=> setBusqueda(e.target.value)} 
