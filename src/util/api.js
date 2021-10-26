@@ -8,7 +8,7 @@ const getToken = () => {
 export const registrarProductos = async (data, successCallback, errorCallback) => {
     const options = {
       method: 'POST',
-      url: 'http://localhost:5000/productos',
+      url: 'https://boiling-temple-06719.herokuapp.com/productos',
       headers: { 'Content-Type': 'application/json', Authorization: getToken() },
       data,
     };
@@ -16,7 +16,7 @@ export const registrarProductos = async (data, successCallback, errorCallback) =
   };
 
 export	const obtenerProductos = async (successCallback, errorCallback) => {
-    const options = { method: 'GET', url: 'http://localhost:5000/productos',
+    const options = { method: 'GET', url: 'https://boiling-temple-06719.herokuapp.com/productos',
   headers:{
     Authorization: getToken()
   },
@@ -29,7 +29,7 @@ export const editarProducto= async (id,data,successCallback, errorCallback)=>{
 
   const options = {
       method: 'PATCH',
-      url: `http://localhost:5000/productos/${id}`,
+      url: `https://boiling-temple-06719.herokuapp.com/productos/${id}`,
       headers: {'Content-Type': 'application/json', Authorization: getToken()},
       data,
     };
@@ -40,7 +40,7 @@ export const editarProducto= async (id,data,successCallback, errorCallback)=>{
 export const eliminarProducto= async (id,successCallback, errorCallback)=>{
     const options = {
       method: 'DELETE',
-      url: `http://localhost:5000/productos/${id}/`,
+      url: `https://boiling-temple-06719.herokuapp.com/productos/${id}/`,
       headers: {'Content-Type': 'application/json', Authorization: getToken()},
     
     };
@@ -52,7 +52,7 @@ export const eliminarProducto= async (id,successCallback, errorCallback)=>{
 //CRUD DE USUARIOS 
 
 export const obtenerUsuarios = async (successCallback, errorCallback) => {
-    const options = { method: 'GET', url: 'http://localhost:5000/usuarios' ,
+    const options = { method: 'GET', url: 'https://boiling-temple-06719.herokuapp.com/usuarios' ,
     headers:{
       Authorization: getToken(),
     }
@@ -63,7 +63,7 @@ export const obtenerUsuarios = async (successCallback, errorCallback) => {
   export const obtenerDatosUsuario = async (successCallback, errorCallback) => {
     const options = {
       method: 'GET',
-      url: 'http://localhost:5000/usuarios/self',
+      url: 'https://boiling-temple-06719.herokuapp.com/usuarios/self',
       headers: {
         Authorization: getToken(), // 3. enviarle el token a backend
       },
@@ -74,7 +74,7 @@ export const obtenerUsuarios = async (successCallback, errorCallback) => {
 export const editarUsuario= async (id,data,successCallback, errorCallback)=>{
   const options = {
     method: 'PATCH',
-    url: `http://localhost:5000/usuarios/${id}`,
+    url: `https://boiling-temple-06719.herokuapp.com/usuarios/${id}`,
     headers: {'Content-Type': 'application/json',Authorization: getToken()},
     data,
   };
@@ -84,7 +84,7 @@ export const editarUsuario= async (id,data,successCallback, errorCallback)=>{
 export const eliminarUsuario= async (id,successCallback, errorCallback)=>{
   const options = {
     method: 'DELETE',
-    url: `http://localhost:5000/usuarios/${id}/`,
+    url: `https://boiling-temple-06719.herokuapp.com/usuarios/${id}/`,
     headers: {'Content-Type': 'application/json',Authorization: getToken()},
   };
     await axios.request(options).then(successCallback).catch(errorCallback);
@@ -96,7 +96,7 @@ export const eliminarUsuario= async (id,successCallback, errorCallback)=>{
 export const crearVenta = async (data, successCallback, errorCallback) => {
   const options = {
     method: 'POST',
-    url: 'http://localhost:5000/ventas',
+    url: 'https://boiling-temple-06719.herokuapp.com/ventas',
     headers: { 'Content-Type': 'application/json', Authorization: getToken() },
     data,
   };
@@ -104,7 +104,7 @@ export const crearVenta = async (data, successCallback, errorCallback) => {
 };
 
 export const obtenerVentas = async (successCallback, errorCallback) => {
-  const options = { method: 'GET', url: 'http://localhost:5000/ventas' ,
+  const options = { method: 'GET', url: 'https://boiling-temple-06719.herokuapp.com/ventas' ,
   headers:{
     Authorization: getToken(),
   }
@@ -114,7 +114,7 @@ export const obtenerVentas = async (successCallback, errorCallback) => {
 export const editarVenta= async (id,data,successCallback, errorCallback)=>{
   const options = {
     method: 'PATCH',
-    url: `http://localhost:5000/ventas/${id}`,
+    url: `https://boiling-temple-06719.herokuapp.com/ventas/${id}`,
     headers: {'Content-Type': 'application/json',Authorization: getToken()},
     data,
   };
@@ -124,7 +124,7 @@ export const editarVenta= async (id,data,successCallback, errorCallback)=>{
 export const eliminarVenta= async (id,successCallback, errorCallback)=>{
   const options = {
     method: 'DELETE',
-    url: `http://localhost:5000/ventas/${id}/`,
+    url: `https://boiling-temple-06719.herokuapp.com/ventas/${id}/`,
     headers: {'Content-Type': 'application/json',Authorization: getToken()},
   };
     await axios.request(options).then(successCallback).catch(errorCallback);
@@ -137,7 +137,7 @@ export const eliminarVenta= async (id,successCallback, errorCallback)=>{
 export const obtenerUsuarios = async (successCallback, errorCallback) => {
   const options = {
     method: 'GET',
-    url: 'http://localhost:5000/usuarios',
+    url: 'https://boiling-temple-06719.herokuapp.com/usuarios',
     headers: {
       Authorization: getToken(),
     },
@@ -148,7 +148,7 @@ export const obtenerUsuarios = async (successCallback, errorCallback) => {
 export const obtenerDatosUsuario = async (successCallback, errorCallback) => {
   const options = {
     method: 'GET',
-    url: 'http://localhost:5000/usuarios/self',
+    url: 'https://boiling-temple-06719.herokuapp.com/usuarios/self',
     headers: {
       Authorization: getToken(), // 3. enviarle el token a backend
     },
@@ -159,7 +159,7 @@ export const obtenerDatosUsuario = async (successCallback, errorCallback) => {
 export const editarUsuario = async (id, data, successCallback, errorCallback) => {
   const options = {
     method: 'PATCH',
-    url: `http://localhost:5000/usuarios/${id}/`,
+    url: `https://boiling-temple-06719.herokuapp.com/usuarios/${id}/`,
     headers: { 'Content-Type': 'application/json', Authorization: getToken() },
     data,
   };
