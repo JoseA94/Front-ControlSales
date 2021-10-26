@@ -20,7 +20,7 @@ function App() {
     <Auth0Provider
     domain="control-sales-app.us.auth0.com"
     clientId="oRG693XYOT1YEQvdGvLKaD0d4aNLrai3"
-    redirectUri="http://localhost:3000/admin/RegistroProductos"
+    redirectUri="https://frozen-island-35955.herokuapp.com/admin/RegistroProductos"
     audience = 'https://api.control.sales.app'
     >
       <div className='App'>
